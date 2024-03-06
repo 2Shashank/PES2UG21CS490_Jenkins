@@ -2,11 +2,11 @@ pipeline {
     agent any
     
     stages {
-        stage('Build') 
+        stage('Build') {
             steps {
                 script {
                     // Compile the .cpp file
-                    sh 'g++ -o my_program my_program.cpp'
+                    sh 'g++ -o my_program my_program.cpp
                     echo 'Build Stage Successful'
                 }
             }
